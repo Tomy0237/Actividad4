@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chile Limpio</title>
+</head>
+
+<body>
+    <h2>Postulación para el trabajo de apoyo ambiental para Chiloé</h2>
+        <form class="form">
+            <ul>
+                <li>
+                    <label for="rut">Rut:</label>
+                    <input type="text" id="rut" name="rut">
+                </li>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="appaterno">Apellido paterno:</label>
+                    <input type="text" id="appaterno" name="appaterno">
+                </li>
+                <li>
+                    <label for="apmaterno">Apellido materno:</label>
+                    <input type="text" id="apmaterno" name="apmaterno">
+                </li>
+                <li>
+                    <label for="fecha_nacimiento">Fecha nacimientop:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                </li>
+                <li>
+                    <label for="celular">Celular:</label>
+                    <input type="phone" id="celular" name="celular">
+                </li>
+                <li>
+                    <label for="profesion">Profesión:</label>
+                    <input type="text" id="profesion" name="profesion">
+                </li>
+                <li>
+                    <label for="motivacion">Motivación:</label>
+                    <textarea id="msg" name="motivacion"></textarea>
+                </li>
+            </ul>
+            <button type="submit" onsubmit="enviarFormulario()">Enviar</button>
+        </form>
+
+
+</body>
+
+</html>

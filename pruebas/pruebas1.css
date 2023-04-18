@@ -1,0 +1,43 @@
+h2{
+    text-align:center;
+  }
+  
+  h2 a {
+    color: rgb(50,50,50);
+    text-decoration: none;
+   }
+  
+  .form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  
+  .form input{
+    width: 90%;
+    height: 20px;
+    margin: .5rem
+  }
+  
+  .form button{
+    padding: .5em 1em;
+    border:none;
+    background: rgba(100, 201, 255, 0.801);
+    cursor: pointer;
+  }
+  
+  .form-container{
+    max-width:700px;
+    margin: 0 auto;
+  }
+  
+  .form-element {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    
+  }
