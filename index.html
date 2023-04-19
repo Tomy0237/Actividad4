@@ -15,7 +15,7 @@
             <ul>
                 <li>
                     <label for="rut">Rut:</label>
-                    <input type="text" id="rut" name="rut">
+                    <input type="text" id="rut">
                 </li>
                 <li>
                     <label for="name">Nombre:</label>
@@ -34,12 +34,18 @@
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
                 </li>
                 <li>
-                    <label for="edad">Edad:</label>
-                    <input type="text" id="edad" name="edad">
+                    <label for="">Edad:</label>
+                    <input type="text" id="edad">
                 </li>
                 <li>
                     <label for="genero">Genero:</label>
-                    <input type="text" id="genero" name="genero">
+                    <select name="genero" id="genero">
+                        <option selected disabled>Seleccione una opción</option>
+                        <option value="H">Masculino</option>
+                        <option value="M">Femenino</option>
+                        <option value="PE">Prefiero no especificar</option>
+                    </select>
+                    
                 </li>
                 <li>
                     <label for="celular">Celular:</label>
@@ -47,7 +53,7 @@
                 </li>
                 <li>
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email">
                 </li>
                 <li>
                     <label for="profesion">Profesión:</label>
@@ -58,9 +64,11 @@
                     <textarea id="msg" name="motivacion"></textarea>
                 </li>
             </ul>
-            <button type="submit" onsubmit="enviarFormulario()">Enviar</button>
+            <button type="submit" onsubmit="mayor_edad()">Enviar</button>
         </form>
-
+        
+        
+        <script src="js/formulario.js"></script>
 
 </body>
 
