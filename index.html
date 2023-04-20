@@ -16,26 +16,33 @@
                 <li>
                     <label for="rut">Rut:</label>
                     <input type="text" id="rut">
+                    <div id="mensaje1">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="user_name">
+                    <div id="mensaje2">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="appaterno">Apellido paterno:</label>
                     <input type="text" id="appaterno" name="appaterno">
+                    <div id="mensaje3">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="apmaterno">Apellido materno:</label>
                     <input type="text" id="apmaterno" name="apmaterno">
+                    <div id="mensaje3">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="fecha_nacimiento">Fecha nacimiento:</label>
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                    <div id="mensaje4">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="">Edad:</label>
                     <input type="text" id="edad">
+                    <div id="mensaje5">Debe tener entre 3 y 20 caracteres.</div>
+
                 </li>
                 <li>
                     <label for="genero">Genero:</label>
@@ -45,26 +52,31 @@
                         <option value="M">Femenino</option>
                         <option value="PE">Prefiero no especificar</option>
                     </select>
-                    
+                    <div id="mensaje6">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="celular">Celular:</label>
                     <input type="phone" id="celular" name="celular">
+                    <div id="mensaje7">Debe tener entre 3 y 20 caracteres.</div>
+
                 </li>
                 <li>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
+                    <div id="mensaje8">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="profesion">Profesión:</label>
                     <input type="text" id="profesion" name="profesion">
+                    <div id="mensaje9">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
                 <li>
                     <label for="motivacion">Motivación:</label>
                     <textarea id="msg" name="motivacion"></textarea>
+                    <div id="mensaje10">Debe tener entre 3 y 20 caracteres.</div>
                 </li>
             </ul>
-            <button type="submit" onsubmit="mayor_edad()">Enviar</button>
+            <button type="submit" onclick="validar()">Enviar</button>
         </form>
         
         

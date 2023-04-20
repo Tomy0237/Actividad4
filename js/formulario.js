@@ -1,8 +1,17 @@
-function mayor_edad(){
-    
-    var edad = document.getElementById('edad').value;
+function validar(){
+    let rut = document.getElementById('rut').value;
+    let edad = document.getElementById('edad').value;
 
-    if (edad > 17) {
+    if (rut.length > 8 && rut.length < 11){
+        alert(rut.length);
+
+
+    }else{
+        alert(rut.length);
+
+    }
+
+    if (edad > 17 && edad < 36) {
         alert('Buenas');
 
 
@@ -12,5 +21,5 @@ function mayor_edad(){
     }
 
 
-
+    
 }
