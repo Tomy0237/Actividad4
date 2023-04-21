@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Chile Limpio</title>
 </head>
-
+<script type="text/javascript" src="jquery-1.7.1.in.js"></script>
+<script src="js/formulario.js"></script>
 <body>
     <h2>Postulación para el trabajo de apoyo ambiental para Chiloé</h2>
         <form class="form">
@@ -20,14 +22,19 @@
                 <li>
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="user_name">
+                    <p id="name-error" class="error"></p>
                 </li>
+
+                
                 <li>
                     <label for="appaterno">Apellido paterno:</label>
                     <input type="text" id="appaterno" name="appaterno">
+                    <p id="appaterno-error" class="error"></p>
                 </li>
                 <li>
                     <label for="apmaterno">Apellido materno:</label>
                     <input type="text" id="apmaterno" name="apmaterno">
+                    <p id="apmaterno-error" class="error"></p>
                 </li>
                 <li>
                     <label for="fecha_nacimiento">Fecha nacimiento:</label>
@@ -64,11 +71,8 @@
                     <textarea id="msg" name="motivacion"></textarea>
                 </li>
             </ul>
-            <button type="submit" onsubmit="mayor_edad()">Enviar</button>
+            <input type="submit"  id="benviar"  value="enviar datos"  class="boton">
         </form>
-        
-        
-        <script src="js/formulario.js"></script>
 
 </body>
 

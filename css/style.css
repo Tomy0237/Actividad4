@@ -41,3 +41,31 @@ h2{
     margin: 1rem auto;
     
   }
+
+  .error {
+      display: block; /* Mostrar como bloque */
+      margin-top: 5px; /* Ajustar distancia superior */
+      color: red;
+}
+
+/* Estilos para campos válidos */
+input:valid, textarea:valid {
+  border: 1px solid green; /* Cambiar el borde a verde para campos válidos */
+}
+
+/* Estilos para campos inválidos */
+input:invalid, textarea:invalid {
+  border: 1px solid red; /* Cambiar el borde a rojo para campos inválidos */
+  text-align: center;
+  align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
