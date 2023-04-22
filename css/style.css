@@ -43,10 +43,10 @@ h2{
   }
 
   .error {
-    color: red; /* Cambia el color del texto de error a rojo */
-    font-size: 14px; /* Cambia el tamaño de fuente del texto de error */
-    display: block; /* Hace que el texto de error ocupe una línea completa */
-    margin-top: 5px; /* Agrega un margen superior de 5px al texto de error */
+    color: red; 
+    font-size: 14px; 
+    display: block; 
+    margin-top: 5px; 
 }
 
 
