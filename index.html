@@ -10,6 +10,8 @@
     <title>Chile Limpio</title>
 </head>
 <script type="text/javascript" src="jquery-1.7.1.in.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script src="js/formulario.js"></script>
 <body>
     <h2>Postulación para el trabajo de apoyo ambiental para Chiloé</h2>
@@ -17,72 +19,74 @@
             <ul>
                 <li>
                     <label for="rut">Rut:</label>
-                    <input type="text" id="rut">
-                    <div id="mensaje1">Debe tener entre 3 y 20 caracteres.</div>
+                    <input type="text" id="rut" class="input" />
+                    <span id="rut-error" class="error"></span>
+
                 </li>
                 <li>
                     <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name">
-                    <p id="name-error" class="error"></p>
+                    <input type="text" id="name" class="input" />
+                    <span id="name-error" class="error"></span>
                 </li>
 
                 
                 <li>
                     <label for="appaterno">Apellido paterno:</label>
-                    <input type="text" id="appaterno" name="appaterno">
-                    <p id="appaterno-error" class="error"></p>
+                    <input type="text" id="appaterno" class="input" />
+                    <span id="appaterno-error" class="error"></span>
                 </li>
                 <li>
                     <label for="apmaterno">Apellido materno:</label>
-                    <input type="text" id="apmaterno" name="apmaterno">
-                    <p id="apmaterno-error" class="error"></p>
+                    <input type="text" id="apmaterno" class="input" />
+                    <span id="apmaterno-error" class="error"></span>
                 </li>
                 <li>
                     <label for="fecha_nacimiento">Fecha nacimiento:</label>
                     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-                    <div id="mensaje4">Debe tener entre 3 y 20 caracteres.</div>
+                    
+    
                 </li>
                 <li>
                     <label for="">Edad:</label>
                     <input type="text" id="edad">
-                    <div id="mensaje5">Debe tener entre 3 y 20 caracteres.</div>
-
+                    <p id="edad-error" class="error"></p>
                 </li>
                 <li>
-                    <label for="genero">Genero:</label>
-                    <select name="genero" id="genero">
-                        <option selected disabled>Seleccione una opción</option>
-                        <option value="H">Masculino</option>
-                        <option value="M">Femenino</option>
-                        <option value="PE">Prefiero no especificar</option>
+                    <select id="genero" name="genero">
+                        <option value="">Seleccione un género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
                     </select>
-                    <div id="mensaje6">Debe tener entre 3 y 20 caracteres.</div>
+                    <div id="genero-error" class="error"></div>
+                   
                 </li>
                 <li>
                     <label for="celular">Celular:</label>
-                    <input type="phone" id="celular" name="celular">
-                    <div id="mensaje7">Debe tener entre 3 y 20 caracteres.</div>
+                    <input type="text" id="celular" name="celular">
+                    <p id="celular-error" class="error"></p>
+                    
 
                 </li>
                 <li>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
-                    <div id="mensaje8">Debe tener entre 3 y 20 caracteres.</div>
+                    <p id="email-error" class="error"></p>
                 </li>
                 <li>
                     <label for="profesion">Profesión:</label>
                     <input type="text" id="profesion" name="profesion">
-                    <div id="mensaje9">Debe tener entre 3 y 20 caracteres.</div>
+                    <p id="profesion-error" class="error"></p>
                 </li>
                 <li>
                     <label for="motivacion">Motivación:</label>
-                    <textarea id="msg" name="motivacion"></textarea>
-                    <div id="mensaje10">Debe tener entre 3 y 20 caracteres.</div>
+                    <input type="text" id="motivacion" name="motivacion">
+                    <p id="motivacion-error" class="error"></p>
                 </li>
             </ul>
-            <input type="submit"  id="benviar"  value="enviar datos"  class="boton">
+            <button id="benviar">Enviar</button>
         </form>
-
+        
 </body>
 
 </html>

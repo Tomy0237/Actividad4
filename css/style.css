@@ -43,22 +43,23 @@ h2{
   }
 
   .error {
-      display: block; /* Mostrar como bloque */
-      margin-top: 5px; /* Ajustar distancia superior */
-      color: red;
+    color: red; /* Cambia el color del texto de error a rojo */
+    font-size: 14px; /* Cambia el tamaño de fuente del texto de error */
+    display: block; /* Hace que el texto de error ocupe una línea completa */
+    margin-top: 5px; /* Agrega un margen superior de 5px al texto de error */
 }
 
-/* Estilos para campos válidos */
-input:valid, textarea:valid {
-  border: 1px solid green; /* Cambiar el borde a verde para campos válidos */
-}
 
-/* Estilos para campos inválidos */
-input:invalid, textarea:invalid {
-  border: 1px solid red; /* Cambiar el borde a rojo para campos inválidos */
-  text-align: center;
-  align-content: center;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
