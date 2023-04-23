@@ -6,13 +6,13 @@ $(document).ready(function() {
         var rutInput = $("#rut");
         var rutError = $("#rut-error");
         var rut = rutInput.val().trim();
-        if (!/^0*(\d{1,3}(\.?\d{3}){0,2})\-?([\dkK])$/.test(rut)) {
+        if (!/^\d{1,3}(\.?\d{3}){0,2}\-?([\dkK])$/.test(rut)) {
             rutError.text("El Rut no tiene un formato válido.");
             event.preventDefault();
         } else {
             rutError.text("");
         }
-
+        
         // Validación del nombre entre 3 y 20 caracteres
         var nameInput = $("#name");
         var nameError = $("#name-error");
