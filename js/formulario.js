@@ -1,3 +1,5 @@
+ src="https://code.jquery.com/jquery-3.6.0.min.js"
+
 $(document).ready(function() {
     $("#benviar").on("click", function(event) {
         // Validación del rut de entre 9 y 10 caracteres
@@ -118,10 +120,37 @@ $(document).ready(function() {
                     motivacionError.text("");
                 }
 
-
-        
-    });
-});
+                $("#btnGenerarCarta").on("click", function () {
+                    var rut = $("#rut").val();
+                    var nombre = $("#name").val();
+                    var apellidoPaterno = $("#appaterno").val();
+                    var apellidoMaterno = $("#apmaterno").val();
+                    var genero = $("#genero").val();
+                    var fechaNacimiento = $("#fecha_nacimiento").val();
+                    var celular = $("#celular").val();
+                    var email = $("#email").val();
+                    var profesion = $("#profesion").val();
+                    var motivacion = $("#motivacion").val();
+                
+                    // Generar la carta con los datos del formulario
+                    var carta = "Estimado(a), me presento mi nombre es " + nombre + " " + apellidoPaterno + " " + apellidoMaterno + ",\n\n";
+                    carta += "Me dirijo a usted con el fin de expresar mi interés en trabajar en su empresa. Como profesional y con experiencia en el campo " + profesion + ", considero que puedo contribuir de manera significativa al equipo de trabajo de su organización.\n\n";
+                    carta += "Adjunto a esta carta, por favor encuentre mi currículum vitae que detalla mi formación académica, experiencia laboral y habilidades relevantes para el puesto. Me gustaría resaltar mi interés y entusiasmo por formar parte de su empresa y colaborar en el logro de sus objetivos.\n";
+                    carta += "Quedo a su disposición para ampliar cualquier información adicional que considere necesaria y para participar en entrevistas o pruebas que su empresa considere pertinentes. Agradezco de antemano su atención a mi solicitud y espero tener la oportunidad de discutir cómo puedo contribuir al éxito de su empresa, a continuacion le adjunto mis datos personales.\n";
+                    carta += "Atentamente,\n";
+                    carta += nombre + " " + apellidoPaterno + " " + apellidoMaterno + "\n";
+                    carta += "Género: " + genero + "\n";
+                    carta += "Fecha de Nacimiento: " + fechaNacimiento + "\n";
+                    carta += "Celular: " + celular + "\n";
+                    carta += "Email: " + email + "\n";
+                    carta += "Profesión: " + profesion + "\n";
+                    carta += "Motivación: " + motivacion + "\n\n";
+                
+                    
+                    alert(carta);
+                });
+            });
+        });
 
 
 

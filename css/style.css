@@ -48,6 +48,21 @@ h2{
     display: block; 
     margin-top: 5px; 
 }
+.boton {
+  display: inline-block; 
+  margin-right: 10px; 
+  
+}
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-buttons button {
+  margin-right: 1rem;
+}
 
 
 
